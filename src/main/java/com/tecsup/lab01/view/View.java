@@ -4,25 +4,20 @@ import com.tecsup.lab01.model.User;
 import javax.swing.*;
 
 public class View {
-	
-	public static void  Imprimir() {
-		
+	public static void main( String[] args ){
 		UserController uc=new UserController();
 		User u=new User();
 		
 		String data;
 		
-		String data =JOptionPane.showInputDialog("Ingrese su nombre: "); 
+		data =JOptionPane.showInputDialog("Ingrese su nombre: "); 
 		u.nom=data;
-		String data= JOptionPane.showInputDialog("Ingrese su apellido: ");
+		data= JOptionPane.showInputDialog("Ingrese su apellido: ");
 		u.ape=data;
-		String data= JOptionPane.showInputDialog("Ingrese su edad: ");
+		data= JOptionPane.showInputDialog("Ingrese su edad: ");
 		u.edad=data;
 		
 		uc.datos();
-		
-		
-		
-	}
+    }
 	
 }
